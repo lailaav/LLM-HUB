@@ -29,33 +29,44 @@
 
                     <div class="inputbox">
                         <ion-icon name="email"></ion-icon>
-                        <input type="email" required>
-                        <label for="">E-mail</label>
-                    </div>
-                    <br>
+                        <label for="textEmail">Email:</label>
+                        <input type="email" id="textEEmail" onfocus="focusEmail()" onblur="blurEmail()" name="textEmail" size="20" required>
 
-                    <div class="inputbox">
-                        <ion-icon name="email"></ion-icon>
-                        <input type="email" required>
-                        <label for=""> Confirmar E-mail </label>
+                        <script>
+                            function focusEmail() {
+                              document.getElementById("textEEmail").style.background = "#DDDDDD";
+                            }
+                            
+                            function blurEmail() {
+                              document.getElementById("textEEmail").style.background = "white";
+                            }
+                        </script>
+
                     </div>
                     <br>
 
                     <div class="inputbox">
                         <ion-icon name="senha"></ion-icon>
-                        <input type="password" required>
+                        <input type="password" id="textSSenha" onfocus="focusSenha()" onblur="blurSenha()" name="textSenha" size="20" required>
                         <label for="">Senha</label>
+
+                        <script>
+                            function focusSenha() {
+                              document.getElementById("textSSenha").style.background = "#DDDDDD";
+                            }
+                            
+                            function blurSenha() {
+                              document.getElementById("textSSenha").style.background = "white";
+                            }
+                        </script>
+
                     </div>
                     <br>
 
-                    <div class="inputbox">
-                        <ion-icon name="senha"></ion-icon>
-                        <input type="password" required>
-                        <label for="">Confirmar senha</label>
+                    <div class="form-group">
+                        <button><a href="LLM Jogos.html">Entrar</a></button>
+                        <button type="reset" id="Reset" name="Reset">Limpar</button>
                     </div>
-                    <br>
-
-                    <button><a href="LLM Jogos.html">Entrar</a></button>
                     <br>
                     <br>
 
@@ -69,7 +80,7 @@
                         <a href="#">Esqueci a senha</a></label>
                 
                     <div class="registrar">
-                        <p>Não tem uma conta? <a href="telaregistro.html">Registrar-se</a></p>
+                        <p>Não tem uma conta? <a href="cadastro.index.html">Registrar-se</a></p>
                     </div>
 
                 </form>           
@@ -78,8 +89,55 @@
     </section>
        </main> 
 
-    <footer>
-        <p>&copy; 2023 LLM Hub® oficial de Jogos. Todos os direitos reservados.</p>
+       <footer class="rodape" id="contato">
+        <div class="rodape-div">
+    
+            <div class="rodape-div-1">
+                <div class="rodape-div-1-coluna">
+                    <span><b>Informação de contato</b></span>
+                    <p>Euclides da Cunha, BA</p>
+                    <p>48500-000</p>
+                    <br>
+                    <p> (75) 991346-9800</p>
+                </div>
+            </div>
+    
+            <div class="rodape-div-2">
+                <div class="rodape-div-2-coluna">
+                    <span><b>Contatos</b></span>
+                    <p> Sinta-se à vontade para entrar em contato conosco a qualquer momento.</p>
+                    <br>
+                    <p>luize.ferreira145@gmail.com</p>
+                    <p>lailalmeidavieira@gmail.com</p>
+                    <p>duda</p>
+                </div>
+            </div>
+    
+            <div class="rodape-div-3">
+                <div class="rodape-div-3-coluna">
+
+                    <span><b>Instagram</b></span>
+                    <p><a href="https://www.instagram.com/luize_carmezim/">@luize_carmezim</a></p>
+                    <br>
+                    <p><a href="https://www.instagram.com/lailadealme/">@lailadealme</a></p>
+                    <br>
+                    <p><a href="https://www.instagram.com/madu.ssilvaa/">@madu.ssilvaa</a></p>
+                </div>
+            </div>
+    
+            <div class="rodape-div-4">
+                <div class="rodape-div-4-coluna">
+                    <span><b>Outros</b></span>
+                    <p>Políticas de Privacidade</p>
+                    <br>
+                    <p>Suporte</p>
+                    <br>
+                    <p>Recursos</p>
+                </div>
+            </div>
+    
+        </div>
+        <p class="rodape-direitos">LLM HUB © 2023 - Todos os Direitos Reservados.</p>
     </footer>
 
 </body>

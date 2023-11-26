@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li><a href="LLM Jogos.html">PÁGINA INICIAL</a></li>
-                <li><a href="#">LOGIN</a></li>
+                <li><a href="login.html">LOGIN</a></li>
                 <li><a href="#">SUPORTE</a></li>
             </ul>
         </nav>
@@ -23,29 +23,96 @@
         <h1>Cadastre-se</h1>
         <div class="form-group">
             <label for="textNome">Nome:</label>
-            <input type="text" id="textNome" name="textNome" size="50">
+            <input type="text" id="textNome" onfocus="focusNome()" onblur="blurNome()" name="textNome" size="50">
             <br>
+
+            <script>
+                function focusNome() {
+                  document.getElementById("textNome").style.background = "#DDDDDD";
+                }
+                
+                function blurNome() {
+                  document.getElementById("textNome").style.background = "white";
+                }
+            </script>
+   
             <br>
             <label for="dateDataNasc">Data Nasc:</label>
-            <input type="date" id="dateDataNasc" name="dateDataNasc">
+            <input type="date" id="dateDataNasc" onfocus="focusData()" onblur="blurData()" name="dateDataNasc">
+            <br>
+
+            <script>
+                function focusData() {
+                  document.getElementById("dateDataNasc").style.background = "#DDDDDD";
+                }
+                
+                function blurData() {
+                  document.getElementById("dateDataNasc").style.background = "white";
+                }
+            </script>
         </div>
+
 
         <div class="form-group">
             <label for="textEmail">Email:</label>
-            <input type="email" id="textEmail" name="textEmail" size="50">
+            <input type="email" id="textEmail" onfocus="focusEmail()" onblur="blurEmail()" name="textEmail" size="50">
             <br>
+
+            <script>
+                function focusEmail() {
+                  document.getElementById("textEmail").style.background = "#DDDDDD";
+                }
+                
+                function blurEmail() {
+                  document.getElementById("textEmail").style.background = "white";
+                }
+            </script>
+
             <br>
             <label for="textEmail">Confirmar Email:</label>
-            <input type="email" id="textEmail" name="textEmail" size="50">
+            <input type="email" id="textCEmail" onfocus="focusCEmail()" onblur="blurCEmail()" name="textEmail" size="50">
+
+            <script>
+                function focusCEmail() {
+                  document.getElementById("textCEmail").style.background = "#DDDDDD";
+                }
+                
+                function blurCEmail() {
+                  document.getElementById("textCEmail").style.background = "white";
+                }
+            </script>
+
         </div>
 
         <div class="form-group">
             <label for="textSenha">Senha:</label>
-            <input type="password" id="textSenha" name="textSenha" size="20">
+            <input type="password" id="textSenha" onfocus="focusSenha()" onblur="blurSenha()" name="textSenha" size="20">
             <br>
+
+            <script>
+                function focusSenha() {
+                  document.getElementById("textSenha").style.background = "#DDDDDD";
+                }
+                
+                function blurSenha() {
+                  document.getElementById("textSenha").style.background = "white";
+                }
+            </script>
+
             <br>
             <label for="textSenha">Confirmar senha:</label>
-            <input type="password" id="textSenha" name="textSenha" size="20">
+            <input type="password" id="textCSenha" onfocus="focusCSenha()" onblur="blurCSenha()" name="textSenha" size="20">
+            
+            <script>
+                function focusCSenha() {
+                  document.getElementById("textCSenha").style.background = "#DDDDDD";
+                }
+                
+                function blurCSenha() {
+                  document.getElementById("textCSenha").style.background = "white";
+                }
+            </script>
+
         </div>
 
         <div class="form-group">
@@ -71,8 +138,56 @@
         </div>
     </form>
 
-    <footer>
-        <p>&copy; 2023 LLM Hub® oficial de Jogos. Todos os direitos reservados.</p>
-    </footer>
+    <footer class="rodape" id="contato">
+      <div class="rodape-div">
+  
+          <div class="rodape-div-1">
+              <div class="rodape-div-1-coluna">
+                  <span><b>Informação de contato</b></span>
+                  <p>Euclides da Cunha, BA</p>
+                  <p>48500-000</p>
+                  <br>
+                  <p> (75) 991346-9800</p>
+              </div>
+          </div>
+  
+          <div class="rodape-div-2">
+              <div class="rodape-div-2-coluna">
+                  <span><b>Contatos</b></span>
+                  <p> Sinta-se à vontade para entrar em contato conosco a qualquer momento.</p>
+                  <br>
+                  <p>luize.ferreira145@gmail.com</p>
+                  <p>lailalmeidavieira@gmail.com</p>
+                  <p>duda</p>
+              </div>
+          </div>
+  
+          <div class="rodape-div-3">
+              <div class="rodape-div-3-coluna">
+
+                  <span><b>Instagram</b></span>
+                  <p><a href="https://www.instagram.com/luize_carmezim/">@luize_carmezim</a></p>
+                  <br>
+                  <p><a href="https://www.instagram.com/lailadealme/">@lailadealme</a></p>
+                  <br>
+                  <p><a href="https://www.instagram.com/madu.ssilvaa/">@madu.ssilvaa</a></p>
+              </div>
+          </div>
+  
+          <div class="rodape-div-4">
+              <div class="rodape-div-4-coluna">
+                  <span><b>Outros</b></span>
+                  <p>Políticas de Privacidade</p>
+                  <br>
+                  <p>Suporte</p>
+                  <br>
+                  <p>Recursos</p>
+              </div>
+          </div>
+  
+      </div>
+      <p class="rodape-direitos">LLM HUB © 2023 - Todos os Direitos Reservados.</p>
+  </footer>
+  
 </body>
 </html>
