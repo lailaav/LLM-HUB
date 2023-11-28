@@ -87,6 +87,36 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('loginForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                validateLogin();
+            });
+
+            window.onpageshow = function (event) {
+                if (event.persisted || (window.performance && window.performance.navigation.type == 2)) {
+                    clearLoginForm();
+                }
+            };
+
+            function validateLogin() {
+                var Email = document.getElementById('textEmail').value;
+                var Senha = document.getElementById('textSenha').value;
+            }
+
+                if (Email && Senha) {
+                    alert('Sucesso');
+                }
+
+            function clearLoginForm() {
+                document.getElementById('textEmail').value = '';
+                document.getElementById('textSenha').value = '';
+            }
+        });
+    </script>
+    
        </main> 
 
        <footer class="rodape" id="contato">
