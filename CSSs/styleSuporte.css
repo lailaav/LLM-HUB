@@ -9,7 +9,7 @@ body {
     font-weight: bold;
     background-color: #f0f0f0;
     color: #333;
-    background-image: url(imgs/wallpaperfundo1.png);
+    background-image: url('../imgs/wallpaperfundo1.png');
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -19,6 +19,15 @@ header {
     padding: 20px;
     text-align: center;
     position: sticky;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 90px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
 }
 
 
@@ -49,6 +58,11 @@ nav a {
     font-weight: bold;
 }
 
+main {
+    padding: 78px;
+    text-align: center;
+}
+
 button {
     background-color: #ff6600;
     color: #fff;
@@ -63,7 +77,6 @@ button:hover {
     background-color: #803cff;
 }
 
-
 .rodape{
     background-color: #292929;
     color: white;
@@ -76,20 +89,20 @@ button:hover {
     text-decoration: none;
     color: white;
 }
-.rodape p{
-    margin-bottom: 5px;
-}
+
 .rodape-div{
     display: flex;
     flex-wrap: wrap;
     width:100%;
     margin: auto;
     align-items: stretch;
-    padding: 60px 10px 40px 10px;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
     display: flex;
-    width: calc(100% / 4 - 30px);
+    width: calc(100% / 4 - 20px);
     padding: 10px;
 }
 .rodape span{
@@ -97,16 +110,16 @@ button:hover {
     color: white;
 }
 .rodape-direitos{
-    width: calc(100% - 30px);
+    width: calc(100% - 20px);
     background-color: black;
     padding: 10px;
     margin: 0px;
     text-align: center;
 }
-
+/*mobile*/
 @media (max-width: 768px) {
     .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
-        width: calc(50% - 30px);
+        width: calc(50% - 20px);
         padding: 10px;
     }
     .rodape-div{

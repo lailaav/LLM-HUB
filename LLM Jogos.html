@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="CSSs/style.css">
 </head>
 <body>
-
     <header>
         <h1> LLM Hub Jogos Eletrônicos </h1>
     </header>
@@ -16,188 +15,195 @@
             <ul>
                 <li><a href="LLM Jogos.html">PÁGINA INICIAL</a></li>
                 <li><a href="login.html">LOGIN</a></li>
-                <li><a href="Suporte.html">SUPORTE</a></li>
-                
+                <li><a href="suporte.html">SUPORTE</a></li>
+
+                    <div class="search">
+                      <a href="" target="_blank" hidden></a>
+                      <input type="text" placeholder="Pesquisar...">
+                      <div class="list">
+                      </div>
+                      <div class="icon"><ion-icon name="search-outline"></ion-icon></div>
+                    </div>
+                  </div>
             </ul>
         </nav>
 
-        <script>
+
+
+    <main>
+
+        <section class="inicio">
+            <br>
+            <h2> Bem-vindo à Loja de Jogos LLM Hub </h2>
+            <p> Seu lugar para descobrir e comprar os melhores jogos! </p>
+            <br>
+        </section>
+        <section class="games">
+
+
+            <article class="game">
+                <h2>Minecraft</h2>
+                <img src="imgs/minecraft.jpg" alt="Minecraft">
+                <br>
+                <br>
+                <p>O jogo Minecraft é um jogo de sandbox, sobrevivência e construção, aonde os jogadores têm liberdade para explorar, construir e criar dentro de um mundo virtual infinito.</p>
+                <br>
+                <button><a href="Minecraft.html">Ver</a></button>
+            </article>
+
+
+            <article class="game">
+                <h2>Cube Escape</h2>
+                <img src="imgs/cube.jpg" alt="Cube Escape">
+                <br>
+                <br>
+                <p>O Jogo Cube Escape é um jogo de aventura e quebra-cabeça, onde os jogadores precisam descobrir e descifrar vários enigmas no jogo. Ele combina elementos de aventura point-and-click em um ambiente surreal e muitas vezes sombrio.</p>
+                <br>
+                <button><a href="Cube.html">Ver</a></button>
+            </article>
+
+
+            <article class="game">
+                <h2>Signalis</h2>
+                <img src="imgs/signalis.jpg" alt="Signalis">
+                <br>
+                <br>
+                <p>O jogo Signalis é um jogo de aventura de terrir e de ficção científica, com elementos de exploração, resolução de quebra-cabeças e narrativa.
+                </p>
+                <br>
+                <button><a href="Signalis.html">Ver</a></button>
+            </article>
+
+
+            <article class="game">
+                <h2>Undertale</h2>
+                <img src="imgs/undertale.jpg" alt="Undertale">
+                <br>
+                <br>
+                <p>O jogo Undertale é um jogo de RGP, de aventura e quebra-cabeça, permitindo que os jogadores tomem decisões que afetam diretamente a história do jogo.
+                </p>
+                <br>
+                <button><a href="Undertale.html">Ver</a></button>
+            </article>
+            
+            <article class="game">
+                <h2>FNAF - Sister Location</h2>
+                <img src="imgs/fnaf.jpg" alt="FNAF">
+                <br>
+                <br>
+                <p>O jogo FNAF: Sister Location é um jogo de terror sobrevivência, onde os jogadores devem criar estratégias para sobreviver as noites nessa pizzaria.
+                </p>
+                <br>
+                <button><a href="FNAF.html">Ver</a></button>
+            </article>
+
+            <article class="game">
+                <h2>GTA V - Grand Theft Auto V</h2>
+                <img src="imgs/gta.jpg" alt="FNAF">
+                <br>
+                <br>
+                <p>O jogo GTA V é um jogo de ação e aventura em um mundo aberto. Ele oferece aos jogadores uma vasta áre para exploração, missões variadas e uma narrativa envolvente.
+                </p>
+                <br>
+                <button><a href="GTA.html">Ver</a></button>
+            </article>
+
+            <article class="game">
+                <h2>Saly Face</h2>
+                <img src="imgs/sally.webp" alt="Saly Face">
+                <br>
+                <br>
+                <p>O jojo Sally Face é um jogo de aventura gráfica com elementos de horror psicilígico, uma narrativa interativa tem e uma atmosfera sombria.
+                </p>
+                <br>
+                <button><a href="SallyFace.html">Ver</a></button>
+            </article>
+
+            <article class="game">
+                <h2>Omori</h2>
+                <img src="imgs/omori.jpg" alt="Omori">
+                <br>
+                <br>
+                <p>O jogo Omori é um jogo RPG de horror psicológico e aventura, tem sua atmosfera única e uma história envolvente que explora questões como traumas, solidão e amizade.
+                </p>
+                <br>
+                <button><a href="Omori.html">Ver</a></button>
+            </article>
+
+            <article class="game">
+                <h2>Until Dawn</h2>
+                <img src="imgs/until.jpg" alt="Until Dawn">
+                <br>
+                <br>
+                <p>O jogo Until Dawn é um jogo de aventura interativa e terror cinematográfico. A escolha dosjogadores influencim o curso da história e o destino dos personagens.
+                </p>
+                <br>
+                <button><a href="UntilD.html">Ver</a></button>
+            </article>
+
+            <article class="game">
+                <h2>Alien Isolation</h2>
+                <img src="imgs/alien.jpg" alt="Alien Isolation">
+                <br>
+                <br>
+                <p>O jogo Alien Isolation é um jogo de sobrevivência e terror de ação, tem sua jogabilidade furtiva e a sensação de vulnerabilidade dos jogadoresa do inimigo implacável.</p>
+                <br>
+                <button><a href="Alien.html">Ver</a></button>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="rodape" id="contato">
+        <div class="rodape-div">
     
-            function search(){
-                let search = document.getElementById('search').value
-                document.getElementById('info').innerHTML= 'Voce está pesquisando por ${search}'
-            }
-
-        </script>
-
-   
-<main>
-
-    <section class="inicio">
-        <h2> Bem-vindo à Loja de Jogos LLM Hub </h2>
-        <p> Seu lugar para descobrir e comprar os melhores jogos! </p>
-    </section>
-    <section class="games">
-
-
-        <article class="game">
-            <h2>Minecraft</h2>
-            <img src="https://artcetera.art/wp-content/uploads/2023/02/tudo-sobre-minecraft.jpg" alt="Minecraft">
-            <br>
-            <br>
-            <p>O Minecraft é um jogo mantido e atualizado pela Mojang Studios, onde os seus usuários podem criar e/ou modificar um mundo através das suas próprias construções. Para isso, ele disponibiliza uma série de blocos, onde eles devem ser agrupados como desejar para dar vida a prédios, casas e outras obras.</p>
-            <br>
-            <button><a href="Minecraft.html">Ver</a></button>
-        </article>
-
-
-        <article class="game">
-            <h2>Cube Escape</h2>
-            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1292940/capsule_616x353.jpg?t=1667254716" alt="Cube Escape">
-            <br>
-            <br>
-            <p>Nesta antologia clássica de aventuras point-and-click, você acompanha a jornada de Dale Vandermeer, um detetive de homicídios que investiga a morte de uma mulher e acaba se envolvendo com o mundo misterioso de Rusty Lake. Cube Escape foi a primeira série de jogos de Rusty Lake, apresentando o universo Rusty Lake.</p>
-            <br>
-            <button><a href="Cube.html">Ver</a></button>
-        </article>
-
-
-        <article class="game">
-            <h2>Signalis</h2>
-            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1262350/header.jpg?t=1684085470" alt="Signalis">
-            <br>
-            <br>
-            <p>Uma experiência clássica de survival horror ambientada em um futuro distópico onde a humanidade descobriu um segredo obscuro. Desvende um mistério cósmico, escape de criaturas aterrorizantes e vasculhe uma instalação governamental fora do mundo como Elster, uma técnica Replika em busca de seus sonhos perdidos.</p>
-            <br>
-            <button><a href="Signalis.html">Ver</a></button>
-        </article>
-
-
-        <article class="game">
-            <h2>Undertale</h2>
-            <img src="https://1.bp.blogspot.com/-HIHxtuKAEQI/W9zlj13aMxI/AAAAAAAABDU/IAIv9KqZMDU_4L9olZ8B6t0ueu819fpogCLcBGAs/w1200-h630-p-k-no-nu/undertale.jpg" alt="Undertale">
-            <br>
-            <br>
-            <p>Bem-vindo a UNDERTALE. Neste RPG, você controla um humano que cai no subsolo no mundo dos monstros. Agora você deve encontrar a saída... ou ficar preso para sempre.
-                (Aviso: o jogo contém imagens que podem ser prejudiciais para jogadores com epilepsia fotossensível ou condição semelhante.)</p>
-            <br>
-            <button><a href="Undertale.html">Ver</a></button>
-        </article>
-        
-        <article class="game">
-            <h2>FNAF - Sister Location</h2>
-            <img src="https://imgs2.dab3games.com/fnaf-walkthrough.jpg" alt="FNAF">
-            <br>
-            <br>
-            <p>Bem-vindo ao Circus Baby's Pizza World, onde a diversão em família e a interatividade vão além de tudo o que você já viu nessas outras pizzarias! Com animadores animatrônicos de última geração que vão surpreender seus filhos, bem como serviço de pizza personalizado, nenhuma festa é completa sem o Circus Baby e sua turma!</p>
-            <br>
-            <button><a href="FNAF.html">Ver</a></button>
-        </article>
-
-        <article class="game">
-            <h2>GTA V - Grand Theft Auto V</h2>
-            <img src="https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg?t=1678296348" alt="FNAF">
-            <br>
-            <br>
-            <p>Explore o deslumbrante mundo de Los Santos e Blaine County na experiência definitiva de Grand Theft Auto V, apresentando amplas atualizações e melhorias técnicas tanto para jogadores novos quanto para os que estão retornando.
-                Grand Theft Auto V para PC oferece aos jogadores a opção de explorar o gigantesco e premiado mundo de Los Santos e Blaine County em resoluções de até 4K e além, assim como a chance de experimentar o jogo rodando a 60 FPS.</p>
-            <br>
-            <button><a href="GTA.html">Ver</a></button>
-        </article>
-
-        <article class="game">
-            <h2>Saly Face</h2>
-            <img src="https://taverna42.files.wordpress.com/2019/07/maxresdefault-8.jpg?w=1280&h=720&crop=1" alt="Saly Face">
-            <br>
-            <br>
-            <p>Sally Face é um jogo de aventura independente com horror psicológico e elementos de ficção de mistério criados por Steve Gabry, também conhecido como Portable Moose. O jogo segue o personagem principal titular Sal Fisher, um menino com rosto protético, que investiga assassinatos locais com seus amigos.</p>
-            <br>
-            <button><a href="#">Ver</a></button>
-        </article>
-
-        <article class="game">
-            <h2>Omori</h2>
-            <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/o/omori-switch/hero" alt="Omori">
-            <br>
-            <br>
-            <p>Omori é um jogo eletrônico de RPG de 2020 desenvolvido pelo estúdio indie Omocat. Baseado na série de webcomics do diretor, Omori, há destaque para conceitos como ansiedade e depressão e elementos de terror psicológico. Na história, o jogador controla um garoto chamado Sunny e seu alter ego do mundo dos sonhos Omori.</p>
-            <br>
-            <button><a href="#">Ver</a></button>
-        </article>
-
-        <article class="game">
-            <h2>Until Dawn</h2>
-            <img src="https://image.api.playstation.com/vulcan/img/rnd/202010/2818/iw8wEAgUm4wwgPEVu1DKucBH.jpg" alt="Until Dawn">
-            <br>
-            <br>
-            <p>Until Dawn é um game de horror exclusivo para PS4, que foi originalmente planejado para PS3. O jogo tem enredo de filme de terror, em que um grupo de adolescentes fica preso em uma casa na montanha. O título tem sistema de escolhas, que vai desde grandes decisões até pequenas ações, como ir para direita ou esquerda. A ideia é que cada atitude mude o passo seguinte, como um Efeito Borboleta. </p>
-            <br>
-            <button><a href="#">Ver</a></button>
-        </article>
-
-        <article class="game">
-            <h2>Alien Isolation</h2>
-            <img src="https://cdn1.epicgames.com/df37f065c3f14eadbf011177396e2966/offer/EGS_AlienIsolation_CreativeAssembly_S5-1920x1080-1cf3b9a86adcefeebf903451b1b3fb49.jpg" alt="Alien Isolation">
-            <br>
-            <br>
-            <p>Alien: Isolation é um game de terror e sobrevivência para diversas plataformas, incluindo Android, iOS, Nintendo Switch, PS4, PS5, Xbox One, Xbox Series X/S e PC (via Steam e Epic Games Store). A história segue Amanda Ripley, filha da icônica personagem Ellen Ripley, em busca de respostas sobre o desaparecimento de sua mãe. Para isso, ela tem que escapar do implacável Xenoformo e outras ameaças que habitam a estação espacial Sevastopol.</p>
-            <br>
-            <button><a href="#">Ver</a></button>
-        </article>
-
-    </section>
-</main>
-
-<footer class="rodape" id="contato">
-    <div class="rodape-div">
-
-        <div class="rodape-div-1">
-            <div class="rodape-div-1-coluna">
-                <span><b>Informação de contato</b></span>
-                <p>Euclides da Cunha, BA</p>
-                <p>48500-000</p>
-                <br>
-                <p> (75) 991346-9800</p>
+            <div class="rodape-div-1">
+                <div class="rodape-div-1-coluna">
+                    <span><b>Informação de contato</b></span>
+                    <p>Euclides da Cunha, BA</p>
+                    <p>48500-000</p>
+                    <br>
+                    <p> (75) 991346-9800</p>
+                </div>
             </div>
-        </div>
-
-        <div class="rodape-div-2">
-            <div class="rodape-div-2-coluna">
-                <span><b>Contatos</b></span>
-                <p> Sinta-se à vontade para entrar em contato conosco a qualquer momento.</p>
-                <br>
-                <p>luize.ferreira145@gmail.com</p>
-                <p>lailalmeidavieira@gmail.com</p>
-                <p>mariaeduardasantossilva919@gmail.com</p>
+    
+            <div class="rodape-div-2">
+                <div class="rodape-div-2-coluna">
+                    <span><b>Contatos</b></span>
+                    <p> Sinta-se à vontade para entrar em contato conosco a qualquer momento.</p>
+                    <br>
+                    <p>luize.ferreira145@gmail.com</p>
+                    <p>lailalmeidavieira@gmail.com</p>
+                    <p>mariaeduardasantossilva919@gmail.com</p>
+                </div>
             </div>
-        </div>
+    
+            <div class="rodape-div-3">
+                <div class="rodape-div-3-coluna">
 
-        <div class="rodape-div-3">
-            <div class="rodape-div-3-coluna">
-
-                <span><b>Instagram</b></span>
-                <p><a href="https://www.instagram.com/luize_carmezim/">@luize_carmezim</a></p>
-                <br>
-                <p><a href="https://www.instagram.com/lailadealme/">@lailadealme</a></p>
-                <br>
-                <p><a href="https://www.instagram.com/madu.ssilvaa/">@madu.ssilvaa</a></p>
+                    <span><b>Instagram</b></span>
+                    <p><a href="https://www.instagram.com/luize_carmezim/">@luize_carmezim</a></p>
+                    <br>
+                    <p><a href="https://www.instagram.com/lailadealme/">@lailadealme</a></p>
+                    <br>
+                    <p><a href="https://www.instagram.com/madu.ssilvaa/">@madu.ssilvaa</a></p>
+                </div>
             </div>
-        </div>
-
-        <div class="rodape-div-4">
-            <div class="rodape-div-4-coluna">
-                <span><b>Outros</b></span>
-                <p>Políticas de Privacidade</p>
-                <br>
-                <p><a href="Suporte.html">Suporte</a></p>
-                <br>
-                <p>Recursos</p>
+    
+            <div class="rodape-div-4">
+                <div class="rodape-div-4-coluna">
+                    <span><b>Outros</b></span>
+                    <p>Políticas de Privacidade</p>
+                    <br>
+                    <p>Suporte</p>
+                    <br>
+                    <p>Recursos</p>
+                </div>
             </div>
+    
         </div>
-
-    </div>
-    <p class="rodape-direitos">LLM HUB © 2023 - Todos os Direitos Reservados.</p>
-</footer>
+        <p class="rodape-direitos">LLM HUB © 2023 - Todos os Direitos Reservados.</p>
+    </footer>
 
 </body>
 </html>
