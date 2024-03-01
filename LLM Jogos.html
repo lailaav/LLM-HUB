@@ -17,16 +17,22 @@
                 <li><a href="login.html">LOGIN</a></li>
                 <li><a href="suporte.html">SUPORTE</a></li>
 
-                    <div class="search">
-                      <a href="" target="_blank" hidden></a>
-                      <input type="text" placeholder="Pesquisar...">
-                      <div class="list">
-                      </div>
-                      <div class="icon"><ion-icon name="search-outline"></ion-icon></div>
-                    </div>
-                  </div>
+                <li> 
+                    <input type = "search" id = "search" onsearch = "search()" placeholder = "Pesquisa">
+                    <button id = 'sb'> Buscar </button>
+                    <p id = "demo"></p>
+                </li>
             </ul>
         </nav>
+
+        <script>
+    
+            function search(){
+                let search = document.getElementById('search').value
+                document.getElementById('info').innerHTML= 'Voce está pesquisando por ${search}'
+            }
+
+        </script>
 
 
 
