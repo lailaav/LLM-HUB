@@ -34,9 +34,22 @@
 
         </script>
 
-
-
     <main>
+
+        <script>
+            var resposta = prompt("Você gostaria de receber atualizações ou notificações por e-mail? (Sim / Não)");
+    
+            if (resposta && resposta.toLowerCase() === "sim") {
+                var email = prompt("Por favor, insira seu endereço de e-mail:");
+                if (email) {
+                    alert("Obrigado! Seu e-mail (" + email + ") foi registrado para receber atualizações.");
+                } else {
+                    alert("Por favor, insira um endereço de e-mail válido.");
+                }
+            } else {
+                alert("Obrigado por responder!");
+            }
+        </script>
 
         <section class="inicio">
             <br>
